@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+}
+header {
+  background-color: #222222;
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+span{
+    color: #D01418;
+}
+nav#menu ul {
+  list-style: none;
+  display: flex;
+}
+nav#menu li {
+  padding: 0px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 2px;
+}
+nav#menu li:nth-child(1) {
+  padding: 0px 20px;
+}
+nav#menu li:nth-child(2) {
+  flex-grow: 1;
+}
+nav#menu li:nth-child(7) {
+  flex-grow: 0.05;
+}
+.destaque {
+  background-image: url(../img/fundohexagonal.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 512px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.destaque h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: block;
+}
+.destaque button {
+  background-color: #d01418;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+  height: 61px;
+  color: #f3f3f3;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  display: block;
+  margin: 30px;
+}
+.pdestaque {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h1 {
+  text-align: center;
+  padding: 40px;
+}
+.pdestaque .card {
+  background-color: white;
+  width: 265px;
+  height: 322px;
+  border-radius: 5px;
+}
+.pdestaque .capajogo {
+  padding: 40px;
+}
+.pdestaque .preco {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 0px 20px;
+}
+.pdestaque .parcelas {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  text-align: left;
+  padding: 0px 20px;
+}
+.pdestaque .envio {
+  font-weight: 400;
+  font-size: 0.625rem;
+  text-align: left;
+  padding: 0px 20px;
+  color: #619d00;
+}
+.pestrela {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5625rem;
+  font-weight: 400;
+}
+.peCard1 {
+  width: 361px;
+  height: 135px;
+  border-radius: 10px;
+  background-image: url(../img/cadeirasgamer.png);
+  color: white;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.peCard2 {
+  width: 361px;
+  height: 135px;
+  border-radius: 10px;
+  background-image: url(../img/computadores.png);
+  color: white;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainfooter {
+  background-color: #222222;
+  width: 100%;
+  height: 216px;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.fesquerdo {
+  flex-grow: 0.8;
+  font-size: 1.5625rem;
+  font-weight: 400;
+}
+.fdireito {
+  flex-grow: 0.05;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  text-align: center;
+}
+.fdireito img {
+  margin: 0px 15px;
+}
+/**
+000-480  => Smaller Smartphones
+481-768  => Tables & Larger Smartphones
+769-1279 => Laptops, Larger tablets in landscape, small desktops
+1280+    => Larger desktops and monitors
+*/
+@media (max-width:768px) {
+  .fesquerdo {
+  flex-grow: 0;
+  }
+  main h1 {
+    padding: 10px;
+  }
+}
